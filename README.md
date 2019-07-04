@@ -3,19 +3,9 @@
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
 [appurl]: http://plexrequests.8bits.ca/
-[hub]: https://hub.docker.com/r/linuxserver/plexrequests/
-
-THIS IMAGE IS DEPRECATED. For users that want to have a current Plex request server we highly reccomend `linuxserver/ombi` .
-
-[![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
-
-The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
-* [forum.linuxserver.io][forumurl]
-* [IRC][ircurl] on freenode at `#linuxserver.io`
-* [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
+[hub]: https://hub.docker.com/r/rigrassm/docker-plexrequests/
 
 # linuxserver/plexrequests
-[![](https://images.microbadger.com/badges/version/linuxserver/plexrequests.svg)](https://microbadger.com/images/linuxserver/plexrequests "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/plexrequests.svg)](https://microbadger.com/images/linuxserver/plexrequests "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/plexrequests.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/plexrequests.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/x86-64/x86-64-plexrequests)](https://ci.linuxserver.io/job/Docker-Builders/job/x86-64/job/x86-64-plexrequests/)
 
 [Plexrequests][appurl], a simple automated way for users to request new content for Plex Users can search for content to request. Integrates with couchpotato, sonarr and sickrage etc...
 
@@ -31,7 +21,7 @@ docker create \
     -e PGID=<gid> -e PUID=<uid>  \
     -e URL_BASE=</name> \
     -p 3000:3000 \
-    linuxserver/plexrequests
+    rigrassm/docker-plexrequests
 ```
 
 ## Parameters
@@ -79,7 +69,7 @@ If you need to use a reverse proxy for plexrequest, set `URL_BASE` to `/<name>`.
 
 * image version number
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/plexrequests`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' rigrassm/docker-plexrequests`
 
 ## Versions
 
