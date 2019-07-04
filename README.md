@@ -1,7 +1,3 @@
-[linuxserverurl]: https://linuxserver.io
-[forumurl]: https://forum.linuxserver.io
-[ircurl]: https://www.linuxserver.io/irc/
-[podcasturl]: https://www.linuxserver.io/podcast/
 [appurl]: http://plexrequests.8bits.ca/
 [hub]: https://hub.docker.com/r/rigrassm/docker-plexrequests/
 
