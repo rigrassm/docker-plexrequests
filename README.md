@@ -1,7 +1,7 @@
 [appurl]: http://plexrequests.8bits.ca/
 [hub]: https://hub.docker.com/r/rigrassm/docker-plexrequests/
 
-# linuxserver/plexrequests
+# rigrassm/plexrequests
 
 [Plexrequests][appurl], a simple automated way for users to request new content for Plex Users can search for content to request. Integrates with couchpotato, sonarr and sickrage etc...
 
