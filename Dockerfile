@@ -4,7 +4,7 @@ FROM lsiobase/ubuntu:xenial
 ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="zaggash <zaggash@users.noreply.github.com>,sparklyballs"
+LABEL maintainer="rigrassm <rigrassm@gmail.com>"
 
 # package versions
 ARG MONGO_VERSION="3.2.9"
